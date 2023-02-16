@@ -7,6 +7,8 @@ authors = ["Oleksandr Hiliazov <oleksandr.hiliazov@eleks.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 replit = "^3.2.5"
+heroes = "^1.0.2"
+"colorgram.py" = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 
