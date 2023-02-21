@@ -1,5 +1,4 @@
 from data import get_question_data
-
 from question_model import Question
 from quiz_brain import QuizBrain
 

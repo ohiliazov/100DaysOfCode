@@ -23,9 +23,7 @@ while should_continue.lower() == "yes":
 
     bidders[name] = bid
 
-    should_continue = input(
-        "Are there any other bidders? Type 'yes' or 'no'.\n"
-    )
+    should_continue = input("Are there any other bidders? Type 'yes' or 'no'.\n")
 
     replit.clear()
 

@@ -4,14 +4,14 @@ from typing import List
 import replit
 
 logo = r"""
-.------.            _     _            _    _            _    
-|A_  _ |.          | |   | |          | |  (_)          | |   
+.------.            _     _            _    _            _
+|A_  _ |.          | |   | |          | |  (_)          | |
 |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
 | \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
-|  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
+|  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   <
 `-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
-      |  \/ K|                            _/ |                
-      `------'                           |__/           
+      |  \/ K|                            _/ |
+      `------'                           |__/
 """
 
 CARD_RANKS = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"}
@@ -80,9 +80,7 @@ def hand_score(hand) -> int:
     return sum(card.value() for card in hand)
 
 
-while (
-    input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y"
-):
+while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
     replit.clear()
     print(logo)
 
@@ -104,10 +102,7 @@ while (
 
     print()
     print(f"Your hand: {user_hand}. Your score is {user_hand.score()}.")
-    print(
-        f"Dealer hand: {dealer_hand}. "
-        f"Dealer score is {dealer_hand.score()}."
-    )
+    print(f"Dealer hand: {dealer_hand}. " f"Dealer score is {dealer_hand.score()}.")
     print()
     if user_hand.is_bust():
         print("You went over. You lose 😤.")

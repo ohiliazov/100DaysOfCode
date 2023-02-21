@@ -1,7 +1,7 @@
 import random
+from turtle import Screen, Turtle, colormode
 
 import colorgram
-from turtle import Turtle, Screen, colormode
 
 colormode(255)
 

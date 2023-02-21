@@ -1,4 +1,5 @@
 import random
+
 from replit import clear
 
 lives_left = 6
@@ -100,7 +101,6 @@ def print_word(word: str, letters: set):
 
 is_game_over = False
 while correct_letters != guessed and lives_left > 0:
-
     print_word(word, guessed)
     guess = input("Guess the letter or substring: ")
     if guess in correct_letters:

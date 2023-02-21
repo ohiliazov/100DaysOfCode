@@ -1,5 +1,6 @@
-from typing import List
 from html import unescape
+from typing import List
+
 from question_model import Question
 
 
@@ -17,7 +18,7 @@ class QuizBrain:
             self.score += 1
             print("You got it right!")
         else:
-            print(f"That's wrong.")
+            print("That's wrong.")
         print(f"The correct answer was: {correct_answer}.")
         print(f"Your current score is: {self.score}/{len(self.question_list)}")
         print()

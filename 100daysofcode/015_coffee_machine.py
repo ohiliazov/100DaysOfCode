@@ -88,7 +88,7 @@ while True:
         continue
 
     if not (coffee_option := coffee_machine.get_coffee_option(option)):
-        print(f"There is no such option.")
+        print("There is no such option.")
 
     if insufficient := coffee_machine.enough_resources(coffee_option):
         print(f"Sorry, there is not enough {insufficient}")
@@ -100,7 +100,7 @@ while True:
     money += int(input("How many pennies? ")) * 0.01
 
     if money < coffee_option["price"]:
-        print(f"Sorry, there is not enough money. Money refunded.")
+        print("Sorry, there is not enough money. Money refunded.")
         continue
 
     if change := (money - coffee_option["price"]):

@@ -29,10 +29,7 @@ art_scissors = """
 rock_paper_scissors = [art_rock, art_paper, art_scissors]
 
 user_choice = int(
-    input(
-        "What do you choose? "
-        "Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"
-    )
+    input("What do you choose? " "Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
 )
 
 if user_choice < 0 or user_choice > 2:
