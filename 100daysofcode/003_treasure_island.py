@@ -20,8 +20,8 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************'''
 print(art)
 crossroad_choice = input(
-    'Welcome to Treasure Island.\n'
-    'Your mission is to find the treasure.\n'
+    "Welcome to Treasure Island.\n"
+    "Your mission is to find the treasure.\n"
     'You\'re at a cross road. Where do you want to go? Type "left" or "right"\n'
 )
 
@@ -34,8 +34,8 @@ if crossroad_choice != "left":
     exit()
 
 lake_choice = input(
-    'You\'ve come to a lake. '
-    'There is an island in the middle of the lake. '
+    "You've come to a lake. "
+    "There is an island in the middle of the lake. "
     'Type "wait" to wait for a boat. '
     'Type "swim" to swim across.\n'
 )
@@ -45,7 +45,7 @@ if lake_choice == "swim":
     exit()
 
 if lake_choice != "wait":
-    print("You get attacked by a deadly snake. Game Over.")
+    print("You get attacked by a deadly starting_positions. Game Over.")
     exit()
 
 island_choice = input(
