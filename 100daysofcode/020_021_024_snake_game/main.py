@@ -14,7 +14,7 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
-scoreboard.print_score()
+scoreboard.update_scoreboard()
 
 screen.listen()
 
@@ -25,8 +25,9 @@ screen.onkey(snake.right, "Right")
 
 game_is_on = True
 while game_is_on:
-    screen.update()
-    time.sleep(0.15)
+    for _ in range(15):
+        screen.update()
+        time.sleep(0.01)
     snake.move()
 
     if food.distance(snake.head) < 15:
@@ -35,7 +36,8 @@ while game_is_on:
         scoreboard.increase_score()
 
     if snake.hit_the_wall() or snake.hit_the_tail():
-        game_is_on = False
-        scoreboard.game_over()
+        # game_is_on = False
+        scoreboard.reset()
+        snake.reset()
 
 screen.exitonclick()

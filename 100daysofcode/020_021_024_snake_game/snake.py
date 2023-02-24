@@ -13,11 +13,12 @@ class Snake:
         self.segments = []
         for x, y in STARTING_POSITION:
             self.add_segment(x, y)
+        self.segments[0].shape("triangle")
 
     def add_segment(self, x: int, y: int):
         segment = Turtle(shape="square")
         segment.penup()
-        segment.color("white")
+        segment.color("darkgreen")
         segment.goto(x, y)
 
         self.segments.append(segment)
@@ -58,8 +59,19 @@ class Snake:
         return not (-280 <= x <= 280) or not (-280 <= y <= 280)
 
     def hit_the_tail(self):
-        return any(seg.distance(self.head) < 10 for seg in self.segments[1:])
+        for seg in self.segments[1:]:
+            if self.head.distance(seg) < 10:
+                print(self.head.position(), seg.position())
+                return True
+        return False
 
     def extend(self):
         x, y = self.tail.position()
         self.add_segment(x, y)
+
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        for x, y in STARTING_POSITION:
+            self.add_segment(x, y)
