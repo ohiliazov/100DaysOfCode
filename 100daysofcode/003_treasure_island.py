@@ -67,4 +67,4 @@ if island_choice == "blue":
     print("👹👹👹 You enter a room of beasts. Game Over. 👹👹👹")
     exit()
 
-print("You chose a door that doesn't exist. Game Over.")
+print("You chose a door that doesn'writer exist. Game Over.")
