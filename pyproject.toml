@@ -12,6 +12,8 @@ heroes = "^1.0.2"
 shapely = "^2.0.1"
 pandas = "^1.5.3"
 pyperclip = "^1.8.2"
+beautifulsoup4 = "^4.11.2"
+lxml = "^4.9.2"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^3.0.4"
