@@ -2,18 +2,19 @@
 name = "100daysofcode"
 version = "0.1.0"
 description = ""
-authors = ["Oleksandr Hiliazov <oleksandr.hiliazov@eleks.com>"]
+authors = ["Oleksandr Hiliazov <oleksandr.hiliazov@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-replit = "^3.2.5"
 heroes = "^1.0.2"
 "colorgram.py" = "^1.2.0"
 shapely = "^2.0.1"
-pandas = "^1.5.3"
+pandas = "^2.0.0"
 pyperclip = "^1.8.2"
 beautifulsoup4 = "^4.11.2"
 lxml = "^4.9.2"
+replit = "^3.2.7"
+requests = "^2.28.2"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^3.0.4"
@@ -21,7 +22,6 @@ pre-commit = "^3.0.4"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
 
 [tool.ruff]
 ignore = ["E501"]
